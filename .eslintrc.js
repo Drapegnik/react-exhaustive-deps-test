@@ -28,13 +28,15 @@ module.exports = {
   extends: ["plugin:react-hooks/recommended"],
 
   rules: {
-    "react/jsx-uses-react": "error",
-    "react/jsx-uses-vars": "error",
-    "react-hooks/exhaustive-deps": [
-      "warn",
-      {
-        enableDangerousAutofixThisMayCauseInfiniteLoops: true
-      }
-    ]
+    'react/jsx-uses-react': 'error',
+    'react/jsx-uses-vars': 'error',
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': ['warn', {
+      enableDangerousAutofixThisMayCauseInfiniteLoops : true
+    }],
+
+    'semi': ['error', 'always'],
+    'quotes': ['error', 'single'],
+    'comma-dangle': ['error', 'only-multiline'],
   }
 };

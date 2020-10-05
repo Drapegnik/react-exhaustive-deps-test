@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
-import "./styles.css";
+import React, { useState, useEffect } from 'react';
+import './styles.css';
 
 const Test = ({ count }) => {
   useEffect(() => {
-    console.log("effect", count);
-  }, []);
+    console.log('effect', count);
+  }, [count]);
   return <div>{count}</div>;
 };
 
